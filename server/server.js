@@ -18,6 +18,10 @@ app.post('/car', (req, res) => {
   res.sendStatus(201);
 });
 
+app.get('/cars', (req, res) => {
+  res.send(carList);
+});
+
 app.listen(PORT, () => {
   console.log('Server is running on PORT:', PORT);
 });
